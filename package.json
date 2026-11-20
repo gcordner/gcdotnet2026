@@ -1,0 +1,25 @@
+{
+  "name": "gcdotnet2026",
+  "version": "0.1.0",
+  "description": "Custom block theme for geoffcordner.net — a hand-built FSE rebuild of the portfolio site.",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcordner/gcdotnet2026.git"
+  },
+  "keywords": [],
+  "author": "Geoff Cordner",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/gcordner/gcdotnet2026/issues"
+  },
+  "homepage": "https://github.com/gcordner/gcdotnet2026#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^35.0.0",
+    "sass": "^1.108.2"
+  }
+}

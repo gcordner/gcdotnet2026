@@ -1,15 +1,28 @@
-# Empty Theme
+# gcdotnet2026
 
-Empty theme contains all of the boilerplate you need to get started building a block-based theme: 
+Custom WordPress block theme for [geoffcordner.net](https://geoffcordner.net) — a
+hand-built Full Site Editing (FSE) rebuild of my developer portfolio, replacing a
+classic Understrap-based child theme.
 
-- An empty `theme.json` file. 
-- `functions.php` with some basic setup.
-- `style.css` to set up the theme.
-- A separate stylesheet with all the front-end alignments you'll need. 
-- An empty `index.php`
+## Requirements
 
-It also includes basic `index.html` and `singular.html` templates, plus a `header.html` template part. These ensure that the theme works out of the box with no modifications. 
+- WordPress 6.4+
+- PHP 8.1+
+- Node.js (for the asset build)
 
-For more background on the theme, [read the original PR](https://github.com/WordPress/theme-experiments/pull/81). 
+## Development
 
-🌟 [Use the command line tool](https://github.com/WordPress/theme-experiments#generating-your-own-starter-theme) to generate your own brand-new theme based on this boilerplate.
+Install dependencies and build theme assets:
+
+    npm install
+    npm run build
+
+For active development with file watching:
+
+    npm start
+
+Built with [`@wordpress/scripts`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/).
+
+## License
+
+GPL-2.0-or-later
