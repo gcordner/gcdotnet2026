@@ -6,3 +6,4 @@ notes/
 *.sql
 *.tar.gz
 *.zip
+assets/fonts/*.ttf

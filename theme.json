@@ -1,10 +1,62 @@
 {
-	"version": 2,
-	"settings": {
-		"appearanceTools": true,
-		"layout": {
-			"contentSize": "840px",
-			"wideSize": "1100px"
-		}
-	}
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "840px",
+      "wideSize": "1100px"
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Bebas Neue', sans-serif",
+          "name": "Bebas Neue",
+          "slug": "bebas-neue",
+          "fontFace": [
+            {
+              "fontFamily": "Bebas Neue",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/BebasNeue-Regular.woff2"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "'Montserrat', sans-serif",
+          "name": "Montserrat",
+          "slug": "montserrat",
+          "fontFace": [
+            {
+              "fontFamily": "Montserrat",
+              "fontWeight": "100 900",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/Montserrat-VariableFont_wght.woff2"]
+            },
+            {
+              "fontFamily": "Montserrat",
+              "fontWeight": "100 900",
+              "fontStyle": "italic",
+              "src": [
+                "file:./assets/fonts/Montserrat-Italic-VariableFont_wght.woff2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--montserrat)"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--bebas-neue)",
+          "fontWeight": "400",
+          "lineHeight": "1.2"
+        }
+      }
+    }
+  }
 }
