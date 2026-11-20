@@ -1,0 +1,22 @@
+{
+    "name": "gcordner/gcdotnet2026",
+    "description": "Custom block theme for geoffcordner.net — a hand-built FSE rebuild of the portfolio site.",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0-or-later",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7",
+        "wp-coding-standards/wpcs": "^3.0",
+        "phpcsstandards/phpcsutils": "^1.0",
+        "phpcsstandards/phpcsextra": "^1.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "lint": "phpcs",
+        "fix": "phpcbf"
+    }
+}
