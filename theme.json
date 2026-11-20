@@ -26,6 +26,11 @@
       ]
     },
     "typography": {
+      "fontSizes": [
+        { "slug": "medium", "size": "18px", "name": "Medium" },
+        { "slug": "large", "size": "32px", "name": "Large" },
+        { "slug": "x-large", "size": "40px", "name": "Extra Large" }
+      ],
       "fontFamilies": [
         {
           "fontFamily": "'Bebas Neue', sans-serif",
@@ -70,7 +75,8 @@
       "text": "var(--wp--preset--color--body-text)"
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--montserrat)"
+      "fontFamily": "var(--wp--preset--font-family--montserrat)",
+      "fontSize": "var(--wp--preset--font-size--medium)"
     },
     "elements": {
       "heading": {
