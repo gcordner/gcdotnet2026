@@ -1,0 +1,5 @@
+.DS_Store
+node_modules/
+*.sql
+*.tar.gz
+*.zip
