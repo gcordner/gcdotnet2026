@@ -6,6 +6,25 @@
       "contentSize": "840px",
       "wideSize": "1100px"
     },
+    "color": {
+      "defaultPalette": false,
+      "custom": false,
+      "palette": [
+        { "slug": "white", "color": "#FFFFFF", "name": "White" },
+        { "slug": "off-white", "color": "#f4fafb", "name": "Off White" },
+        { "slug": "black", "color": "#0d0d0d", "name": "Black" },
+        { "slug": "body-text", "color": "#212529", "name": "Body Text" },
+        { "slug": "light-blue", "color": "#b4d2d9", "name": "Light Blue" },
+        { "slug": "blue", "color": "#2675a6", "name": "Blue" },
+        { "slug": "steel-blue", "color": "#498ba6", "name": "Steel Blue" },
+        { "slug": "dark-blue", "color": "#162c40", "name": "Dark Blue" },
+        { "slug": "grey-light", "color": "#F0F0F0", "name": "Light Grey" },
+        { "slug": "grey-dark", "color": "#5b5e5f", "name": "Dark Grey" },
+        { "slug": "grey", "color": "#8B8B8B", "name": "Grey" },
+        { "slug": "yellow", "color": "#F2B035", "name": "Yellow" },
+        { "slug": "transparent", "color": "transparent", "name": "Transparent" }
+      ]
+    },
     "typography": {
       "fontFamilies": [
         {
@@ -46,6 +65,10 @@
     }
   },
   "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--white)",
+      "text": "var(--wp--preset--color--body-text)"
+    },
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--montserrat)"
     },
@@ -55,6 +78,24 @@
           "fontFamily": "var(--wp--preset--font-family--bebas-neue)",
           "fontWeight": "400",
           "lineHeight": "1.2"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--blue)"
+        },
+        ":hover": {
+          "color": {
+            "text": "#1e5e85"
+          }
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "background": "var(--wp--preset--color--dark-blue)",
+          "text": "var(--wp--preset--color--white)"
         }
       }
     }
