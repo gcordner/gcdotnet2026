@@ -1,8 +1,6 @@
 # gcdotnet2026
 
-Custom WordPress block theme for [geoffcordner.net](https://geoffcordner.net) — a
-hand-built Full Site Editing (FSE) rebuild of my developer portfolio, replacing a
-classic Understrap-based child theme.
+A minimal custom WordPress block theme for [geoffcordner.net](https://geoffcordner.net).
 
 ## Requirements
 
@@ -10,18 +8,34 @@ classic Understrap-based child theme.
 - PHP 8.1+
 - Node.js (for the asset build)
 
-## Development
+## Setup
 
-Install dependencies and build theme assets:
+Clone the repo, then install dependencies:
 
     npm install
+    composer install
+
+## Build
+
+Compile theme assets:
+
     npm run build
 
-For active development with file watching:
+For development with file watching:
 
     npm start
 
 Built with [`@wordpress/scripts`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/).
+
+## Code Quality
+
+Lint PHP against WordPress Coding Standards:
+
+    composer lint
+
+Auto-fix what can be fixed:
+
+    composer fix
 
 ## License
 
