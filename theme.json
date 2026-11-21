@@ -169,6 +169,12 @@
     }
   },
   "styles": {
+    "spacing": {
+      "padding": {
+        "left": "0.75rem",
+        "right": "0.75rem"
+      }
+    },
     "color": {
       "background": "var(--wp--preset--color--white)",
       "text": "var(--wp--preset--color--body-text)"
