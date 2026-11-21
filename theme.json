@@ -10,26 +10,121 @@
       "defaultPalette": false,
       "custom": false,
       "palette": [
-        { "slug": "white", "color": "#FFFFFF", "name": "White" },
-        { "slug": "off-white", "color": "#f4fafb", "name": "Off White" },
-        { "slug": "black", "color": "#0d0d0d", "name": "Black" },
-        { "slug": "body-text", "color": "#212529", "name": "Body Text" },
-        { "slug": "light-blue", "color": "#b4d2d9", "name": "Light Blue" },
-        { "slug": "blue", "color": "#2675a6", "name": "Blue" },
-        { "slug": "steel-blue", "color": "#498ba6", "name": "Steel Blue" },
-        { "slug": "dark-blue", "color": "#162c40", "name": "Dark Blue" },
-        { "slug": "grey-light", "color": "#F0F0F0", "name": "Light Grey" },
-        { "slug": "grey-dark", "color": "#5b5e5f", "name": "Dark Grey" },
-        { "slug": "grey", "color": "#8B8B8B", "name": "Grey" },
-        { "slug": "yellow", "color": "#F2B035", "name": "Yellow" },
-        { "slug": "transparent", "color": "transparent", "name": "Transparent" }
+        {
+          "name": "White",
+          "color": "#FFFFFF",
+          "slug": "white"
+        },
+        {
+          "name": "Off White",
+          "color": "#f4fafb",
+          "slug": "off-white"
+        },
+        {
+          "name": "Black",
+          "color": "#0d0d0d",
+          "slug": "black"
+        },
+        {
+          "name": "Body Text",
+          "color": "#212529",
+          "slug": "body-text"
+        },
+        {
+          "name": "Light Blue",
+          "color": "#b4d2d9",
+          "slug": "light-blue"
+        },
+        {
+          "name": "Blue",
+          "color": "#2675a6",
+          "slug": "blue"
+        },
+        {
+          "name": "Steel Blue",
+          "color": "#498ba6",
+          "slug": "steel-blue"
+        },
+        {
+          "name": "Dark Blue",
+          "color": "#162c40",
+          "slug": "dark-blue"
+        },
+        {
+          "name": "Light Grey",
+          "color": "#F0F0F0",
+          "slug": "grey-light"
+        },
+        {
+          "name": "Dark Grey",
+          "color": "#5b5e5f",
+          "slug": "grey-dark"
+        },
+        {
+          "name": "Grey",
+          "color": "#8B8B8B",
+          "slug": "grey"
+        },
+        {
+          "name": "Yellow",
+          "color": "#F2B035",
+          "slug": "yellow"
+        },
+        {
+          "name": "Transparent",
+          "color": "transparent",
+          "slug": "transparent"
+        }
       ]
     },
     "typography": {
+      "fluid": true,
       "fontSizes": [
-        { "slug": "medium", "size": "18px", "name": "Medium" },
-        { "slug": "large", "size": "32px", "name": "Large" },
-        { "slug": "x-large", "size": "40px", "name": "Extra Large" }
+        {
+          "name": "Small",
+          "size": "0.85rem",
+          "slug": "small",
+          "fluid": false
+        },
+        {
+          "name": "Medium",
+          "size": "1rem",
+          "slug": "medium",
+          "fluid": false
+        },
+        {
+          "name": "Medium Large",
+          "size": "1.15rem",
+          "slug": "medium-large",
+          "fluid": false
+        },
+        {
+          "name": "Large",
+          "size": "1.5rem",
+          "slug": "large",
+          "fluid": {
+            "min": "1.15rem",
+            "max": "1.5rem"
+          }
+        },
+        {
+          "name": "Extra Large",
+          "size": "2rem",
+          "slug": "x-large",
+          "fluid": {
+            "min": "1.5rem",
+            "max": "2rem"
+          }
+        },
+        {
+          "name": "XX Large",
+          "size": "2.5rem",
+          "slug": "xx-large",
+          "fluid": {
+            "min": "2rem",
+            "max": "2.5rem"
+          }
+        }
       ],
       "fontFamilies": [
         {
@@ -41,7 +136,9 @@
               "fontFamily": "Bebas Neue",
               "fontWeight": "400",
               "fontStyle": "normal",
-              "src": ["file:./assets/fonts/BebasNeue-Regular.woff2"]
+              "src": [
+                "file:./assets/fonts/BebasNeue-Regular.woff2"
+              ]
             }
           ]
         },
@@ -54,7 +151,9 @@
               "fontFamily": "Montserrat",
               "fontWeight": "100 900",
               "fontStyle": "normal",
-              "src": ["file:./assets/fonts/Montserrat-VariableFont_wght.woff2"]
+              "src": [
+                "file:./assets/fonts/Montserrat-VariableFont_wght.woff2"
+              ]
             },
             {
               "fontFamily": "Montserrat",
@@ -76,7 +175,9 @@
     },
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--montserrat)",
-      "fontSize": "var(--wp--preset--font-size--medium)"
+      "fontSize": "var(--wp--preset--font-size--medium)",
+      "lineHeight": "1.625",
+      "letterSpacing": "0.05625em"
     },
     "elements": {
       "heading": {
