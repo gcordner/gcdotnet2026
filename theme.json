@@ -196,11 +196,14 @@
       },
       "link": {
         "color": {
-          "text": "var(--wp--preset--color--blue)"
+          "text": "var(--wp--preset--color--body-text)"
+        },
+        "typography": {
+          "textDecoration": "none"
         },
         ":hover": {
           "color": {
-            "text": "#1e5e85"
+            "text": "var(--wp--preset--color--steel-blue)"
           }
         }
       }
