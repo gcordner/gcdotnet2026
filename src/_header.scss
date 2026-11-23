@@ -1,24 +1,38 @@
 .site-header {
-	position: sticky;
-	top: 0;
-	z-index: 999;
-	padding: 0 1rem 1rem 1rem;
-	background-color: var(--wp--preset--color--white);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 0 1rem 1rem 1rem;
+    background-color: var(--wp--preset--color--white);
 }
 
 .wp-block-site-title a {
-	font-family: var(--wp--preset--font-family--bebas-neue);
-	font-style: italic;
-	font-size: 2.5rem;
+    font-family: var(--wp--preset--font-family--bebas-neue);
+    font-style: italic;
+    font-size: 2.5rem;
 
-	@media (min-width: 992px) {
-		font-size: 4.5rem;
-		transition: font-size 0.2s ease-in-out;
-	}
+    @media (min-width: 992px) {
+        font-size: 4.5rem;
+        transition: font-size 0.2s ease-in-out;
+    }
 }
 
 @media (min-width: 992px) {
-	.site-header.is-scrolled .wp-block-site-title a {
-		font-size: 3.5rem;
-	}
+    .site-header.is-scrolled .wp-block-site-title a {
+        font-size: 3.5rem;
+    }
+}
+
+.wp-block-navigation-item__content {
+    text-transform: uppercase;
+    // color: var(--wp--preset--color--body-text);
+    border-bottom: 2px solid transparent;
+}
+
+.wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content {
+    &:hover,
+    &:focus {
+        color: var(--wp--preset--color--blue);
+        border-bottom-color: var(--wp--preset--color--blue);
+    }
 }
