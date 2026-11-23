@@ -2,8 +2,11 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    padding: 0 1rem 1rem 1rem;
     background-color: var(--wp--preset--color--white);
+
+    &.is-scrolled {
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    }
 }
 
 .wp-block-site-title a {
@@ -30,6 +33,7 @@
 }
 
 .wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content {
+
     &:hover,
     &:focus {
         color: var(--wp--preset--color--blue);
