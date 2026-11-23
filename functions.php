@@ -39,3 +39,16 @@ function gcdotnet2026_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'gcdotnet2026_scripts' );
+
+/**
+ * Enqueue compiled styles in the block editor, so the editor canvas matches the frontend.
+ */
+function gcdotnet2026_editor_assets() {
+	$asset_file = get_template_directory() . '/build/index.asset.php';
+	if ( file_exists( $asset_file ) ) {
+		$asset = include $asset_file;
+		wp_enqueue_style( 'gcdotnet2026-editor-style', get_template_directory_uri() . '/build/style-index.css', array(), $asset['version'] );
+	}
+}
+
+add_action( 'enqueue_block_editor_assets', 'gcdotnet2026_editor_assets' );
